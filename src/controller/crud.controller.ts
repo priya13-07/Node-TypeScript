@@ -24,7 +24,7 @@ export class CRUDController <T> extends BaseController {
         try{
             const data = await this.model.findById(id);
             if (data) {
-            return res.status(StatusCodes.OK).josn(this.format_res(data));
+            return res.status(StatusCodes.OK).json(this.format_res(data));
             } else {
                 this.error_handler(res, new Error('Not Found'), StatusCodes.NOT_FOUND);
             }

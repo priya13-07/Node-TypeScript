@@ -59,5 +59,6 @@ export class CRUDController <T> extends BaseController {
             this.error_handler(res,error);
         }
     }
+    
 
 }

@@ -8,7 +8,7 @@ const express = require("express");
 
 export class App {
     private app : Application
-    private apiPath : string = "/api";
+    private apiPath : string = "api";
 
 
     constructor(

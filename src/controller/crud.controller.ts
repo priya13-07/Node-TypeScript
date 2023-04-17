@@ -17,6 +17,7 @@ export class CRUDController <T> extends BaseController {
         const data = await this.model.find(query);
         return res.status(StatusCodes.OK).json(this.format_res(data));
     } catch (error : unknown){
+        console.log("here")
         this.error_handler(res, error )
     }}
 
